@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:padding="15dp" >
+
+    <ImageButton
+        android:id="@+id/voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seta" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/voltar"
+        android:layout_below="@+id/voltar"
+        android:gravity="center"
+        android:text="INSTRUÇÕES"
+        android:textColor="#FFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="36dp"
+        android:gravity="left"
+        android:text="-Selecione uma das opções\n &apos;PEDRA&apos;, &apos;PAPEL&apos;, &apos;TESOURA&apos;.\n\n-Após selecionar, observe a\n mensagem com o resultado.\n\n-Quando a mensagem sumir,\n selecione novo jogo para\n jogar novamente."
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:gravity="center"
+        android:text="BOM JOGO!"
+        android:textColor="#FFF"
+        android:textSize="50sp" />
+
+</RelativeLayout>

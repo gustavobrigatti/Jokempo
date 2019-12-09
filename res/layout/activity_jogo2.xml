@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:padding="15dp" >
+
+    <ImageButton 
+        android:id="@+id/voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seta"/>
+    
+    
+    <ImageButton
+        android:id="@+id/ibPapell2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ibPedral2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/papell2" />
+
+    <ImageButton
+        android:id="@+id/ibTesoural2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ibPapell2"
+        android:layout_marginRight="51dp"
+        android:background="@drawable/tesoural2" />
+
+    <ImageButton
+        android:id="@+id/ibPedral2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="84dp"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@+id/ibPapell2"
+        android:background="@drawable/pedral2" />
+
+    <TextView
+        android:id="@+id/vitoriasUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="0"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vitoriasUser"
+        android:layout_alignBottom="@+id/vitoriasUser"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Você"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/vitoriacpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/textView2"
+        android:text="0"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/ivUserl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ibPapell2"
+        android:layout_alignLeft="@+id/ivCpul2"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/papelgrandeuser" />
+
+    <Button
+        android:id="@+id/btnNovol2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Novo Jogo"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/ivCpul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tesouragrandecpu" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vitoriasUser"
+        android:layout_below="@+id/voltar"
+        android:text="CPU"
+        android:textSize="25sp" />
+
+</RelativeLayout>
